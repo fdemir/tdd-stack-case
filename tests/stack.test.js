@@ -11,7 +11,7 @@ describe("my stack tests", () => {
     expect(template instanceof Stack).toBe(true);
   });
 
-  test("is created empty stack", () => {
+  test("creates an empty stack", () => {
     expect(template.top).toBe(0);
     expect(template.data).toEqual([]);
   });
@@ -20,14 +20,14 @@ describe("my stack tests", () => {
     expect(template.isEmpty()).toBe(true);
   });
 
-  test("add an element to the stack", () => {
+  test("adds an element to the stack", () => {
     let parameter = 10;
     template.push(parameter);
     expect(template.top).toBe(1);
     expect(template.peek()).toBe(parameter);
   });
 
-  test("pop an element from the stack.", () => {
+  test("pops an element from the stack.", () => {
     let parameter = 360;
 
     template.push(parameter);
@@ -39,7 +39,7 @@ describe("my stack tests", () => {
     expect(template.data).toEqual([]);
   });
 
-  test("get the top element of the stack", () => {
+  test("gets the top element of the stack", () => {
     let name = "Furkan";
     let surname = "Demir";
 
@@ -49,7 +49,7 @@ describe("my stack tests", () => {
     expect(template.peek()).toEqual(surname);
   });
 
-  test("return the length of the stack", () => {
+  test("returns the length of the stack", () => {
     let parameter = { a: 4 };
 
     template.push(parameter);
@@ -57,7 +57,7 @@ describe("my stack tests", () => {
     expect(template.length()).toEqual(1);
   });
 
-  test("print the elements of the stack", () => {
+  test("prints the elements of the stack", () => {
     let broken_heart = "💔";
     let revolving_heart = "💞";
 
