@@ -1,0 +1,16 @@
+{
+  "name": "tdd-stack",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "test": "jest",
+    "test:watch": "jest --watchAll --verbose"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "jest": "^27.1.1",
+    "vite": "^2.5.4"
+  }
+}
