@@ -40,11 +40,13 @@ describe("my stack tests", () => {
   });
 
   test("get the top element of the stack", () => {
-    let parameter = { a: 4 };
+    let name = "Furkan";
+    let surname = "Demir";
 
-    template.push(parameter);
+    template.push(name);
+    template.push(surname);
 
-    expect(template.peek()).toEqual(parameter);
+    expect(template.peek()).toEqual(surname);
   });
 
   test("return the length of the stack", () => {
